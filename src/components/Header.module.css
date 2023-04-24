@@ -1,0 +1,20 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  height: 12.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  
+
+}
+
+.header img {
+  height: 3rem;
+  margin-bottom: 2rem;
+  
+}
+
+
+

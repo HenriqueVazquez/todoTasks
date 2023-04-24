@@ -1,0 +1,15 @@
+.wrapper {    
+  display: block;
+  align-items: center;   
+}
+
+.wrapper:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  html{
+    font-size: 87.5%;
+  }  
+}
