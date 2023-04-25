@@ -13,3 +13,40 @@
     font-size: 87.5%;
   }  
 }
+
+.content {   
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 1rem;
+  
+}
+
+.empty {
+  border-top: 1px solid var(--gray-400);
+  width: 46rem;  
+}
+
+.imgClipboard {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin-bottom: 1rem;
+}
+
+.imgClipboard img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.empty p {
+  text-align: center;  
+  font-size: 1rem;
+  line-height: 140%;
+  color: var(--gray-300);
+}
+
+.empty p:first-of-type {
+  font-weight: 700;  
+}
