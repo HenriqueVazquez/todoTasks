@@ -3,9 +3,10 @@ import styles from './TaskControl.module.css';
 
 interface tasksInfo {
   numberOfTasks: number;
+  completedTask: number;
 }
 
-export function TaskControl({ numberOfTasks }: tasksInfo) {
+export function TaskControl({ numberOfTasks, completedTask }: tasksInfo) {
 
 
   return (
@@ -18,7 +19,7 @@ export function TaskControl({ numberOfTasks }: tasksInfo) {
           </div>
           <div className={styles.completedTasks}>
             <strong>Concluídas</strong>
-            <span>2 de 5</span>
+            <span>{completedTask} de {numberOfTasks}</span>
           </div>
         </header>
       </div>

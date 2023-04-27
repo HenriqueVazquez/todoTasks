@@ -17,7 +17,7 @@
   margin-top: 0.75rem;
 }
 
-.wrapper  p:first-of-type {
+.textTask {
   width: 39.5rem;
   margin-left: 12px;
   font-weight: 400;
@@ -25,6 +25,17 @@
   font-style: normal;
   color: var(--gray-100);
   line-height: 140%;
+}
+
+.textTaskChecked {
+  width: 39.5rem;
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  color: var(--gray-300);
+  line-height: 140%;
+  text-decoration-line: line-through;
 }
 
 .wrapperTrash {
@@ -41,6 +52,7 @@
   height: 20px;
   color: var(--gray-300);
   transition: all 0.2s ease-in-out;
+  margin-bottom: 2px;
 }
 
 .trash:hover {
@@ -54,9 +66,10 @@
 
 /* Estilo do container do checkbox */
 .checkboxContainer {
-  display: inline-block;
+  display: flex;
   position: relative;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 /* Estilo do checkbox propriamente dito */
@@ -96,21 +109,20 @@
 .checkboxContainer input:checked ~ .checkmark:hover {
   background-color: var(--purple-100);
 }
+
 /* Estilo do sinal de visto dentro do marcador quando o checkbox está marcado */
 .checkboxContainer input:checked ~ .checkmark:after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  bottom: 50%;
+  top: 46%;
+  left: 50%;  
   transform: translate(-50%, -50%) rotate(-45deg);
-  width: 7.31px;
-  height: 4.39px;
+  width: 5.00px;
+  height: 1.8px;
   border: solid var(--gray-100);
   border-width: 0px 0px 2px 2px;
-  display: flex; /* adiciona display flex */
-  justify-content: center; /* centraliza horizontalmente */
-  align-self: center; /* centraliza verticalmente */
+  display: flex; 
+  justify-content: center;
+  align-self: center;
 }
-
 
