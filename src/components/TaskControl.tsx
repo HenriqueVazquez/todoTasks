@@ -19,7 +19,7 @@ export function TaskControl({ numberOfTasks, completedTask }: tasksInfo) {
           </div>
           <div className={styles.completedTasks}>
             <strong>Concluídas</strong>
-            <span>{completedTask} de {numberOfTasks}</span>
+            <span>{numberOfTasks > 0 ? `${completedTask} de ${numberOfTasks}` : 0}</span>
           </div>
         </header>
       </div>
